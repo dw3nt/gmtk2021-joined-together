@@ -7,6 +7,8 @@ public class MatchNpcController : MonoBehaviour
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float minActionTime = 0.25f;
     [SerializeField] private float maxActionTime = 1.25f;
+    [SerializeField] private float carryOffset = 0.85f;
+    [SerializeField] private float dropOffset = 1.25f;
 
     enum State { Wander, Carried, Matched }
 
@@ -16,6 +18,7 @@ public class MatchNpcController : MonoBehaviour
 
     private Vector2 moveDir = Vector2.zero;
     private float wanderTimer;
+    private GameObject holderTarget;
 
     void Start()
     {
@@ -29,6 +32,9 @@ public class MatchNpcController : MonoBehaviour
         switch (state) {
             case State.Wander:
                 WanderUpdate();
+                break;
+            case State.Carried:
+                CarriedUpdate();
                 break;
         }
     }
@@ -62,8 +68,27 @@ public class MatchNpcController : MonoBehaviour
         }
     }
 
+    void CarriedUpdate()
+    {
+        transform.position = holderTarget.transform.position + (Vector3.up * carryOffset);
+    }
+
     void WanderFixedUpdate()
     {
         body.velocity = moveDir * moveSpeed;
+    }
+
+    public void CarryState(GameObject go)
+    {
+        // play carry animation
+        holderTarget = go;
+        state = State.Carried;
+    }
+
+    public void WanderState(int facing)
+    {
+        state = State.Wander;
+        transform.position = holderTarget.transform.position + (Vector3.right * dropOffset * facing);
+        holderTarget = null;
     }
 }
