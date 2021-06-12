@@ -77,13 +77,13 @@ public class PlayerController : MonoBehaviour
     void DropMatchNpc()
     {
         MatchNpcController npc = currentCarry.GetComponent<MatchNpcController>();
-        npc.WanderState(sprite.flipX ? -1 : 1);
+        npc.DropNpc(sprite.flipX ? -1 : 1);
         currentCarry = null;
     }
 
     void OnTriggerEnter2D(Collider2D collider) 
     {
-        if (collider.gameObject.CompareTag("MatchNpc")) {
+        if (collider.gameObject.CompareTag("MatchNpc") && !interactableObjects.Contains(collider.gameObject)) {
             interactableObjects.Add(collider.gameObject);
         }
     }
