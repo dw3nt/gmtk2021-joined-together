@@ -98,6 +98,7 @@ public class MatchNpcController : MonoBehaviour
                 otherController.SetMatchNpc(gameObject);
                 SetMatchNpc(collider.gameObject);
                 CreateMatchWall(gameObject, collider.gameObject);
+                GameManager.instance.AddPoints(1);
             }
         }
     }
