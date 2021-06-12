@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
                 timerText.text = "Time remaining: 0";
                 
                 gameOverMenu.gameObject.SetActive(true);
-                player.GetComponent<PlayerController>().canAcceptInput = false;
+                player.GetComponent<PlayerController>().DisablePlayer();
 
                 // play buzzer?
             }

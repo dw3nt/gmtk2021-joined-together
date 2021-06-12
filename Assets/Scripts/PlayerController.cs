@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D body;
     private SpriteRenderer sprite;
+    private Animator animator;
 
     public bool canAcceptInput = true;
 
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,7 +46,13 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         if (moveDir.x != 0) {
-            sprite.flipX = moveDir.x < 0;
+            sprite.flipX = moveDir.x > 0;
+        }
+
+        if (moveDir != Vector2.zero) {
+            animator.SetBool("isWalking", true);
+        } else {
+            animator.SetBool("isWalking", false);
         }
 
         body.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
@@ -84,8 +92,14 @@ public class PlayerController : MonoBehaviour
     void DropMatchNpc()
     {
         MatchNpcController npc = currentCarry.GetComponent<MatchNpcController>();
-        npc.DropNpc(sprite.flipX ? -1 : 1);
+        npc.DropNpc(sprite.flipX ? 1 : -1);
         currentCarry = null;
+    }
+
+    public void DisablePlayer()
+    {
+        canAcceptInput = false;
+        moveDir = Vector2.zero;
     }
 
     void OnTriggerEnter2D(Collider2D collider) 
