@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private Transform gameOverMenu;
+    [SerializeField] private Transform player;
     [SerializeField] private Transform pointsLabel;
     [SerializeField] private Transform timerLabel;
     [SerializeField] private float startTime = 30f;
@@ -38,9 +40,11 @@ public class GameManager : MonoBehaviour
             if (timeRemaining <= 0) {
                 timerRunning = false;
                 timerText.text = "Time remaining: 0";
-                Debug.Log("level ended");
+                
+                gameOverMenu.gameObject.SetActive(true);
+                player.GetComponent<PlayerController>().canAcceptInput = false;
+
                 // play buzzer?
-                // spawn in menu
             }
         }
     }

@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D body;
     private SpriteRenderer sprite;
 
+    public bool canAcceptInput = true;
+
     private Vector2 moveDir = Vector2.zero;
     public List<GameObject> interactableObjects = new List<GameObject>();
     private GameObject currentCarry;
@@ -21,8 +23,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        GetMoveInput();
-        HandleInteractInput();
+        if (canAcceptInput) {
+            GetMoveInput();
+            HandleInteractInput();
+        }
     }
 
     void FixedUpdate()
