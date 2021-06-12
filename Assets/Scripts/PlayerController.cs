@@ -60,10 +60,13 @@ public class PlayerController : MonoBehaviour
         GameObject closestNpc = null;
         float smallestDistance = 100f;
         foreach ( GameObject go in interactableObjects) {
-            float distanceTo = Vector2.Distance(transform.position, go.transform.position);
-            if( distanceTo < smallestDistance) {
-                smallestDistance = distanceTo;
-                closestNpc = go;
+            MatchNpcController npc = go.GetComponent<MatchNpcController>();
+            if (npc.canMatch) {     // can only carry those not matched...?
+                float distanceTo = Vector2.Distance(transform.position, go.transform.position);
+                if( distanceTo < smallestDistance) {
+                    smallestDistance = distanceTo;
+                    closestNpc = go;
+                }
             }
         }
 

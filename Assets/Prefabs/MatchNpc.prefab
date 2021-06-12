@@ -120,11 +120,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hobby: dance
-  moveSpeed: 0
+  moveSpeed: 2
   minActionTime: 0.25
   maxActionTime: 1.25
   carryOffset: 1.01
   dropOffset: 1.25
+  matchWallPrefab: {fileID: 4664975355312870939, guid: 9d125a7b7226554468b15268fecedbc0, type: 3}
   canMatch: 1
 --- !u!61 &8566751193488193025
 BoxCollider2D:

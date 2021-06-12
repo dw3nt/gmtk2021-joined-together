@@ -10,8 +10,9 @@ public class MatchNpcController : MonoBehaviour
     [SerializeField] private float maxActionTime = 1.25f;
     [SerializeField] private float carryOffset = 0.85f;
     [SerializeField] private float dropOffset = 1.25f;
+    [SerializeField] private Transform matchWallPrefab;
 
-    enum State { Wander, Carried, Matched }
+    enum State { Wander, Carried }
 
     private Rigidbody2D body;
     private CircleCollider2D matchCollider;
@@ -22,7 +23,7 @@ public class MatchNpcController : MonoBehaviour
     private Vector2 moveDir = Vector2.zero;
     private float wanderTimer;
     private GameObject holderTarget;
-    public GameObject mate;
+    private GameObject mate;
 
     public bool canMatch = true;
 
@@ -64,6 +65,8 @@ public class MatchNpcController : MonoBehaviour
             if (Random.Range(0.0f, 1.0f) > 0.5f) {
                 // play walk animation
 
+                // if matched, bias movement towards each other a bit
+
                 float xDir = Random.Range(-1f, 1f);
                 float yDir = Random.Range(-1f, 1f);
                 moveDir = new Vector2(xDir, yDir).normalized;
@@ -92,10 +95,19 @@ public class MatchNpcController : MonoBehaviour
         if (canMatch && collider.gameObject.CompareTag("MatchNpc")) {
             MatchNpcController otherController = collider.gameObject.GetComponent<MatchNpcController>();
             if (otherController.canMatch && hobby == otherController.hobby) {
-                otherController.MatchState(gameObject);
-                MatchState(collider.gameObject);
+                otherController.SetMatchNpc(gameObject);
+                SetMatchNpc(collider.gameObject);
+                CreateMatchWall(gameObject, collider.gameObject);
             }
         }
+    }
+
+    void CreateMatchWall(GameObject go1, GameObject go2)
+    {
+        Transform matchWall = Instantiate(matchWallPrefab);
+        MatchWallController controller = matchWall.GetComponent<MatchWallController>();
+        controller.match1 = go1;
+        controller.match2 = go2;
     }
 
     public void CarryState(GameObject go)
@@ -112,12 +124,7 @@ public class MatchNpcController : MonoBehaviour
     {
         transform.position = holderTarget.transform.position + (Vector3.right * dropOffset * facing);
         holderTarget = null;
-
-        if (mate != null) {
-            MatchState(mate);
-        } else {
-            WanderState(facing);
-        }
+        WanderState(facing);
     }
 
     public void WanderState(int facing)
@@ -128,16 +135,10 @@ public class MatchNpcController : MonoBehaviour
         state = State.Wander;
     }
 
-    public void MatchState(GameObject go) 
+    public void SetMatchNpc(GameObject go) 
     {
-        // this isn't a state - should still wander, just can't match again
-
-        // bias towards each other if over certain distance away
-
         mate = go;
         matchCollider.enabled = false;
-        collisionCollider.enabled = true;
         canMatch = false;
-        state = State.Matched;
     }
 }
