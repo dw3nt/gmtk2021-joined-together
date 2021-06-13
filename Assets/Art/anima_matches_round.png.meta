@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: 9e5a3db716cab3a4aaaac036b79a3843
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5696907288242835250
+    second: walrus
+  - first:
+      213: -948074272635262502
+    second: duck
+  - first:
+      213: 5470159213089692752
+    second: crocodile
+  - first:
+      213: -6952135066528571974
+    second: giraffe
+  - first:
+      213: 6392063467478609912
+    second: blue_dog
+  - first:
+      213: -9110644556398328572
+    second: anima_matches_round_5
+  - first:
+      213: 4885413431825112071
+    second: whale
+  - first:
+      213: -6472859660017749171
+    second: penguin
+  - first:
+      213: 5267935742384627696
+    second: bird
+  - first:
+      213: 4673369475111066054
+    second: anima_matches_round_9
+  - first:
+      213: 587924482661468690
+    second: rhino
+  - first:
+      213: -4614445851608552158
+    second: anima_matches_round_11
+  - first:
+      213: 7211248666865901574
+    second: anima_matches_round_12
+  - first:
+      213: -8045465032745668205
+    second: sloth
+  - first:
+      213: -251466601465731790
+    second: parrot
+  - first:
+      213: -8325503402745466461
+    second: elephant
+  - first:
+      213: 231275711391952528
+    second: anima_matches_round_16
+  - first:
+      213: -1837366258987305981
+    second: monkey
+  - first:
+      213: -4225334471293784987
+    second: anima_matches_round_18
+  - first:
+      213: -2670853061718199082
+    second: cow
+  - first:
+      213: 7752006737769917512
+    second: anima_matches_round_20
+  - first:
+      213: -2591850219241849854
+    second: pig
+  - first:
+      213: 1073996704260499724
+    second: frog
+  - first:
+      213: -8214900238423631951
+    second: chicken
+  - first:
+      213: -100871782874591942
+    second: anima_matches_round_24
+  - first:
+      213: -945672764060088846
+    second: anima_matches_round_25
+  - first:
+      213: -4562381273764460662
+    second: anima_matches_round_26
+  - first:
+      213: -8283611892088510061
+    second: lizard
+  - first:
+      213: -2909069723285134427
+    second: anima_matches_round_28
+  - first:
+      213: -8237405899200836937
+    second: anima_matches_round_29
+  - first:
+      213: 810974341197521316
+    second: anima_matches_round_30
+  - first:
+      213: -8887702204957919859
+    second: anima_matches_round_31
+  - first:
+      213: -2854609148721471151
+    second: anima_matches_round_32
+  - first:
+      213: 7659020037473235038
+    second: anima_matches_round_33
+  - first:
+      213: 4341625098207146322
+    second: owl
+  - first:
+      213: -8695090674159856551
+    second: zebra
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walrus
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 681.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f4c02cefa7f0f40800000000000000
+      internalID: 5696907288242835250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 681.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad963eed873c7d2f0800000000000000
+      internalID: -948074272635262502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crocodile
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 681.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c9a0972d8e9eb40800000000000000
+      internalID: 5470159213089692752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giraffe
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 681.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd1701bdfd058f90800000000000000
+      internalID: -6952135066528571974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_dog
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 681.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff60d86bdb25b850800000000000000
+      internalID: 6392063467478609912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_5
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 681.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4050805db0d709180800000000000000
+      internalID: -9110644556398328572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: whale
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c9bd8d1a97cc340800000000000000
+      internalID: 4885413431825112071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penguin
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 546
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43bfa31f68cb26a0800000000000000
+      internalID: -6472859660017749171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 546
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff5b60a5a77b1940800000000000000
+      internalID: 5267935742384627696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_9
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 545.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9162ce6c42bd040800000000000000
+      internalID: 4673369475111066054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 545.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21acac7b33ab82800800000000000000
+      internalID: 587924482661468690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_11
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 545.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22de89342f136ffb0800000000000000
+      internalID: -4614445851608552158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 403
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6002d87a470831460800000000000000
+      internalID: 7211248666865901574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 402
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913e5eed24c85090800000000000000
+      internalID: -8045465032745668205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parrot
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 409.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235a2c2557c928cf0800000000000000
+      internalID: -251466601465731790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 409.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1fc0ff3ced57c80800000000000000
+      internalID: -8325503402745466461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_16
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 409.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e61beb808a53300800000000000000
+      internalID: 231275711391952528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monkey
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 409.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304f5ca4f1d5086e0800000000000000
+      internalID: -1837366258987305981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 267
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c22556fa89c55c0800000000000000
+      internalID: -4225334471293784987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 267
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4b5098a493fead0800000000000000
+      internalID: -2670853061718199082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 273.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ce53d5e09a49b60800000000000000
+      internalID: 7752006737769917512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 273.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c321335f5e70cd0800000000000000
+      internalID: -2591850219241849854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 273.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09236fef4a97ee00800000000000000
+      internalID: 1073996704260499724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 273.6667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7dc7fe1cfcefd80800000000000000
+      internalID: -8214900238423631951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d46edd5a1a99ef0800000000000000
+      internalID: -100871782874591942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 131
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5cf68a1ab40e2f0800000000000000
+      internalID: -945672764060088846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_26
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 137.66667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87006f676a2fa0c0800000000000000
+      internalID: -4562381273764460662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lizard
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 137.66667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399ecd26fd2ba0d80800000000000000
+      internalID: -8283611892088510061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 137.66667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3eeb4ef78e0a7d0800000000000000
+      internalID: -2909069723285134427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_29
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 137.66667
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba4d637afadead80800000000000000
+      internalID: -8237405899200836937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6666718
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1e809ddd8214b00800000000000000
+      internalID: 810974341197521316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_31
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1.6666718
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85f6040fe988a480800000000000000
+      internalID: -8887702204957919859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_32
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1.6666718
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15160e58a146268d0800000000000000
+      internalID: -2854609148721471151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anima_matches_round_33
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1.6666718
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50f035152e4a4a60800000000000000
+      internalID: 7659020037473235038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1.6666718
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251be8e160d804c30800000000000000
+      internalID: 4341625098207146322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zebra
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1.6666718
+        width: 136.5
+        height: 136.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954d3e4b915d45780800000000000000
+      internalID: -8695090674159856551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

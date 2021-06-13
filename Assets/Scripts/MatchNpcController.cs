@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class MatchNpcController : MonoBehaviour
 {
+    enum AnimationType { Bounce, Roll }
+    enum State { Wander, Carried }
+
     [SerializeField] public string hobby;
+    [SerializeField] private AnimationType animType;
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float minActionTime = 0.25f;
     [SerializeField] private float maxActionTime = 1.25f;
     [SerializeField] private float carryOffset = 0.85f;
     [SerializeField] private float dropOffset = 1.25f;
     [SerializeField] private Transform matchWallPrefab;
-
-    enum State { Wander, Carried }
 
     private Rigidbody2D body;
     private CircleCollider2D matchCollider;
@@ -24,6 +26,7 @@ public class MatchNpcController : MonoBehaviour
     private float wanderTimer;
     private GameObject holderTarget;
     private GameObject mate;
+    private bool squishBounce = true;
 
     public bool canMatch = true;
 
@@ -87,7 +90,48 @@ public class MatchNpcController : MonoBehaviour
 
     void WanderFixedUpdate()
     {
+        switch (animType) {
+            case AnimationType.Bounce:
+                BounceAnimation();
+                break;
+            case AnimationType.Roll:
+                RollAnimation();
+                break;
+        }
+
         body.velocity = moveDir * moveSpeed;
+    }
+
+    void BounceAnimation()
+    {
+        Vector3 squishScale = new Vector3(1.3f, 0.7f, 1);
+        Vector3 stretchScale = new Vector3(0.7f, 1.3f, 1);
+
+        if (moveDir != Vector2.zero) {
+            if (squishBounce) {
+                transform.localScale = Vector3.Lerp(transform.localScale, squishScale, 0.1f);
+                if (transform.localScale.x > 1.25f) {
+                    squishBounce = false;
+                }
+            } else {
+                transform.localScale = Vector3.Lerp(transform.localScale, stretchScale, 0.1f);
+                if (transform.localScale.y > 1.25f) {
+                    squishBounce = true;
+                }
+            }
+        } else {
+            transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one, 0.2f);
+        }
+    }
+
+    void RollAnimation()
+    {
+        if (moveDir != Vector2.zero) {
+            int rollDir = moveDir.x > 0 ? -1 : 1;
+            Quaternion rotateAmount = Quaternion.AngleAxis(90 * rollDir, Vector3.forward);
+            Quaternion targetRotation = transform.rotation * rotateAmount;
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 2 * Time.deltaTime);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)

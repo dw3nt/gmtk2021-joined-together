@@ -123,7 +123,7 @@ MonoBehaviour:
   moveSpeed: 2
   minActionTime: 0.25
   maxActionTime: 1.25
-  carryOffset: 1.01
+  carryOffset: 0.85
   dropOffset: 1.25
   matchWallPrefab: {fileID: 4664975355312870939, guid: 9d125a7b7226554468b15268fecedbc0, type: 3}
   canMatch: 1
