@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NpcMatchSpawner : MonoBehaviour
 {
-    const int SCREEN_BOUNDS = 10;
+    const int SCREEN_BOUNDS = 12;
 
     void Awake()
     {
