@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator animator;
 
+    private bool isFacingWallCloseBy = false;
+
     public bool canAcceptInput = true;
 
     private Vector2 moveDir = Vector2.zero;
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        RayCastObstacleDetect();
     }
 
     void GetMoveInput()
@@ -91,9 +94,25 @@ public class PlayerController : MonoBehaviour
 
     void DropMatchNpc()
     {
+        int facing = sprite.flipX ? 1 : -1;
+        if(isFacingWallCloseBy) {
+            facing *= -1;
+        }
+
         MatchNpcController npc = currentCarry.GetComponent<MatchNpcController>();
-        npc.DropNpc(sprite.flipX ? 1 : -1);
+        npc.DropNpc(facing);
         currentCarry = null;
+    }
+
+    void RayCastObstacleDetect()
+    {
+        int facing = sprite.flipX ? 1 : -1;
+        RaycastHit2D rayHit = Physics2D.Raycast((Vector2)transform.position + Vector2.right * facing, Vector2.right * facing, 2);
+        if (rayHit.collider.CompareTag("Obstacle")) {
+            isFacingWallCloseBy = true;
+        } else {
+            isFacingWallCloseBy = false;
+        }
     }
 
     public void DisablePlayer()
