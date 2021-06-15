@@ -32,12 +32,14 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 2d1c41f4400c2214da048c234d2bd2e9, type: 3}
-    totalSpriteSurfaceArea: 1048576
+    - {fileID: 2800000, guid: 51674b10c0187994c974db18ac552860, type: 3}
+    totalSpriteSurfaceArea: 1051712
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 51674b10c0187994c974db18ac552860, type: 3}
   - {fileID: 5777345464590167936, guid: 2d1c41f4400c2214da048c234d2bd2e9, type: 3}
   - {fileID: -2044503032408098360, guid: 2d1c41f4400c2214da048c234d2bd2e9, type: 3}
   - {fileID: -8952524197024116730, guid: 2d1c41f4400c2214da048c234d2bd2e9, type: 3}
@@ -103,6 +105,7 @@ SpriteAtlas:
   - {fileID: 3104289032452709159, guid: 2d1c41f4400c2214da048c234d2bd2e9, type: 3}
   - {fileID: 2223451452628297843, guid: 2d1c41f4400c2214da048c234d2bd2e9, type: 3}
   m_PackedSpriteNamesToIndex:
+  - metal_cross
   - allSprites_retina_38
   - allSprites_retina_39
   - allSprites_retina_18

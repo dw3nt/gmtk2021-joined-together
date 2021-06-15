@@ -70,7 +70,7 @@ MonoBehaviour:
   match1: {fileID: 0}
   match2: {fileID: 0}
   lineWidth: 0.2
-  lineColor: {r: 1, g: 0, b: 1, a: 1}
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!68 &4664975355312870940
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: b24bfffa9f906a94586cba6b1de6b3ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,7 +186,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1

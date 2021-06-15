@@ -194,6 +194,9 @@ TextureImporter:
   - first:
       213: -5906998896979643932
     second: allSprites_retina_63
+  - first:
+      213: 7551426547287322528
+    second: metal_cross
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
