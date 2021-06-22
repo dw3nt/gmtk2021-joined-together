@@ -35,11 +35,11 @@ public class GameManager : MonoBehaviour
     {
         if (timerRunning) {
             timeRemaining -= Time.deltaTime;
-            timerText.text = "Time remaining: " + Mathf.FloorToInt(timeRemaining % 60);
+            timerText.text = Mathf.FloorToInt(timeRemaining % 60).ToString();
 
             if (timeRemaining <= 0) {
                 timerRunning = false;
-                timerText.text = "Time remaining: 0";
+                timerText.text = "0";
                 
                 gameOverMenu.gameObject.SetActive(true);
                 player.GetComponent<PlayerController>().DisablePlayer();
