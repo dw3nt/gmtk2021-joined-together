@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverMenuController : MonoBehaviour
+public class MainMenuManager : MonoBehaviour
 {
-    public void RestartLevel()
+    public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Playground");
     }
 
-    public void MainMenuScene()
+    public void CreditMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+
     }
 
-    public void QuitGame()
+    public void ExitGame()
     {
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
