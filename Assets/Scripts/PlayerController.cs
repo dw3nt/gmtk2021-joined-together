@@ -5,10 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private AudioClip pickUpClip;
+    [SerializeField] private AudioClip putDownClip;
 
     private Rigidbody2D body;
     private SpriteRenderer sprite;
     private Animator animator;
+    private AudioSource audioClip;
 
     private bool isFacingWallCloseBy = false;
 
@@ -23,6 +26,7 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        audioClip = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -76,7 +80,7 @@ public class PlayerController : MonoBehaviour
         float smallestDistance = 100f;
         foreach ( GameObject go in interactableObjects) {
             MatchNpcController npc = go.GetComponent<MatchNpcController>();
-            if (npc.canMatch) {     // can only carry those not matched...?
+            if (npc.canMatch) {
                 float distanceTo = Vector2.Distance(transform.position, go.transform.position);
                 if( distanceTo < smallestDistance) {
                     smallestDistance = distanceTo;
@@ -87,6 +91,8 @@ public class PlayerController : MonoBehaviour
 
         if (closestNpc) {
             currentCarry = closestNpc;
+            audioClip.clip = pickUpClip;
+            audioClip.Play();
             MatchNpcController npc = closestNpc.GetComponent<MatchNpcController>();
             npc.CarryState(gameObject);
         }
@@ -101,6 +107,8 @@ public class PlayerController : MonoBehaviour
 
         MatchNpcController npc = currentCarry.GetComponent<MatchNpcController>();
         npc.DropNpc(facing);
+        audioClip.clip = putDownClip;
+        audioClip.Play();
         currentCarry = null;
     }
 

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     private Text pointsText;
     private Text timerText;
+    private AudioSource matchSound;
 
     void Awake()
     {
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
             instance = this;
             pointsText = pointsLabel.GetComponent<Text>();
             timerText = timerLabel.GetComponent<Text>();
+            matchSound = GetComponent<AudioSource>();
             timeRemaining = startTime;
         } else {
             Destroy(gameObject);
@@ -53,6 +55,6 @@ public class GameManager : MonoBehaviour
     {
         points += _points;
         pointsText.text = "Matches: " + points;
-        // play sound for match
+        matchSound.Play();
     }
 }
