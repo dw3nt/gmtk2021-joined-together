@@ -12,7 +12,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void CreditMenu()
     {
-
+        SceneManager.LoadScene("CreditScene");
     }
 
     public void ExitGame()
